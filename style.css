@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Unkempt:wght@400;700&display=swap');
+
 :root{
   --red:#f53b57;
 }
 
 @font-face {
-  font-family: 'Kiddosy';
-  src: url('/fonts/MyKidsHandwritten-8MZrn.woff2') format('woff2');
+  font-family: 'MykidsHandwritten';
+  src: url('/fonts/MyKidsHandwritten-8MZrn.woff2') format('woff2'),
+       url('/fonts/MyKidsHandwritten-8MZrn.woff2') format('woff');
        
   font-weight: normal;
   font-style: normal;
@@ -14,7 +17,7 @@
   margin: 0; 
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Kiddosy', cursive; 
+  font-family: 'MykidsHandwritten', 'Unkempt', 'Roboto Slab', sans-serif;
   text-transform: capitalize;
   text-decoration: none;
   outline: none; 
@@ -354,61 +357,12 @@ header .navbar a:hover{
   font-size: 1.4rem;
 }
 
-.pricing{
-  position: relative;
-}
-
-.pricing .box-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.pricing .box-container .box{
-  flex:1 1 35rem;
-  margin:1rem;
-  padding:4rem 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border:.1rem solid rgba(0,0,0,.3);
-  text-align: center;
-  background-size: cover !important;
-  background-position: center !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing .box-container .box h3{
-  font-size: 4rem;
-  color:#333;
-}
-
-.pricing .box-container .box .price{
-  font-size: 5.5rem;
-  color:var(--red);
-}
-
-.pricing .box-container .box .price span{
-  font-size: 2.5rem;
-}
-
-.pricing .box-container .box p{
-  font-size:1.7rem;
-  padding:1rem 0;
-  color:#666;
-}
-
-.pricing .box-container .box .choise{
-  position: absolute;
-  top:0; right:-5rem;
-  background:var(--red);
-  color:#fff;
-  font-size: 2rem;
-  padding:.6rem 5.5rem;
-  transform: rotate(45deg);
-}
 /* gallery */
+
+.gallery{
+  position: relative;
+}
+
 
 /* Gallery container styling */
 .gallery-container {
@@ -508,9 +462,6 @@ header .navbar a:hover{
 
 
 
-
-
-
 .contact{
   display: flex;
   align-items: center;
@@ -538,7 +489,7 @@ header .navbar a:hover{
 }
 
 .contact .row .contact-info .box{
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .contact .row .contact-info .box .title{
